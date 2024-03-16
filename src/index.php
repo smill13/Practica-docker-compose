@@ -51,9 +51,9 @@
 
     <div class="variables">
         <h1>Variables de Entorno</h1>
-        <p>MySQL User: <?php echo getenv('MYSQL_USER'); ?></p>
-        <p>MySQL Password: <?php echo getenv('MYSQL_PASSWORD'); ?></p>
-        <p>MySQL Database: <?php echo getenv('MYSQL_DATABASE'); ?></p>
+        <p>MySQL User: <?php echo getenv('MYSQL_USER') ?: "Endefined"; ?></p>
+        <p>MySQL Password: <?php echo getenv('MYSQL_PASSWORD') ?: "Endefined";?></p>
+        <p>MySQL Database: <?php echo getenv('MYSQL_DATABASE')?: "Endefined";?></p>
     </div>
 </body>
 
